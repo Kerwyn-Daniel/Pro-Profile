@@ -1,10 +1,15 @@
 * {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
     line-height  2.2em;
-    margin: 3em; 
+    margin: 1%;  
     /* padding: 0; */
     /* background-color: beige;*/
 } 
+img { /*had issue with size of images, check w3 for scaling optons*/
+    width: 200px;
+    height: 300px;
+    object-fit: scale-down;
+  }
 
 /* html{
     font-size: 16px;
@@ -72,8 +77,8 @@ header{
 
 header h1{
 font-size: 3em;
-}
 
+}
 header span{
     font-size: 1.5em;
 color: lightslategray;
@@ -112,7 +117,23 @@ this section i took from the products example */
     padding: 1em;
     box-shadow: 3px 3px 2px rgb(113, 113, 115);
 }
-#skil image{
-    width: 5em;
+#BSkil image{
+    width: 2px;
     padding: 0 2em;
+}
+
+/*Fun facts section format edit using grid*/
+.fun{
+    display:grid;
+    /* color: whitesmoke ; */
+     width: 800px;
+    height:  500px;
+    margin-left: auto;
+    border: solid ;
+    border-color: black;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 150px 150px 150px;
+    align-items:center;
+    gap: 1;
+    /* scroll-margin-bottom: auto  ; */
 }
