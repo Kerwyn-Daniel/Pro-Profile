@@ -1,0 +1,118 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    line-height  2.2em;
+    margin: 3em; 
+    /* padding: 0; */
+    /* background-color: beige;*/
+} 
+
+/* html{
+    font-size: 16px;
+    margin-top: 3em;
+} */
+
+
+
+
+/* Background styling *
+researched how to do a gradient for background. 
+then added grid/contain/flex to float rest+shadows of content*/
+
+
+
+/* Nav and footers styling */
+#Top{
+    position: fixed;
+    margin-right: 1em;
+    margin-left: 1em;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    /* justify-content: space-around; */
+    /* background-color: rgb(13, 18, 60);  */
+    color:antiquewhite;
+}
+
+/* #End{   for links nav
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    /* justify-content: space-around; 
+    background-color: rgb(23, 41, 92); 
+} */
+
+#Copy{
+    width: 100%;
+    justify-content: center;    
+    margin-top: 2em;
+    margin-bottom: 1em;
+    background-color: darkslategray;
+    color: #ffffff;
+    padding: 1em 0;
+    text-align:  center;
+}
+
+/* ALL Body formatting */
+
+/*header formats*/
+header,main,footer{
+    margin: 0 auto;
+    max-Width: 800px;
+}
+
+header{
+    padding: 2em 0;;
+}
+
+header h1{
+font-size: 3em;
+}
+
+header span{
+    font-size: 1.5em;
+color: lightslategray;
+}
+
+/*Contain type format*/
+.con{
+    width: 100%;
+     background-image: linear-gradient(white, rgb(35, 35, 84), white); 
+}
+.contain{
+    /* background-color: lightcyan; */
+     /* border: solid black; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: space-around;
+    
+}
+.contain article{
+border: solid black;
+}
+
+/*Skills(ariticles) editing and formatting
+this section i took from the products example */
+
+#skil{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap : 1em;   
+}
+#skil article{
+    background: #8eadcf;
+    padding: 1em;
+    box-shadow: 3px 3px 2px rgb(113, 113, 115);
+}
+#skil image{
+    width: 5em;
+    padding: 0 2em;
+}
